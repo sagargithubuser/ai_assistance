@@ -1,0 +1,38 @@
+.chat {
+  max-width: 640px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.messages {
+  min-height: 320px;
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin-bottom: 12px;
+  overflow-y: auto;
+}
+
+p {
+  background: #f3f4f6;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.you {
+  background: #dbeafe;
+  text-align: right;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 16px;
+}

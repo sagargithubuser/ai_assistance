@@ -1,0 +1,15 @@
+<main class="chat">
+  <!-- <h1>Simple Chatbot</h1> -->
+
+  <section class="messages">
+    <p *ngFor="let chat of chats" [class.you]="chat.from === 'you'">
+      <b>{{ chat.from }}:</b> {{ chat.text }}
+    </p>
+    <p *ngIf="loading"><b>Alexa:</b> typing...</p>
+  </section>
+
+  <form (ngSubmit)="send()">
+    <input name="message" [(ngModel)]="message" placeholder="Type message..." autocomplete="off" />
+    <button type="submit">Send</button>
+  </form>
+</main>
